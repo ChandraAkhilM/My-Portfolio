@@ -1,0 +1,228 @@
+/* styles.css */
+
+
+/* Resetting default margin and padding */
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Navbar styles */
+#navbar {
+    background-color: #7ecac8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9vh;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    font-size: 2rem;
+    padding: 1rem;
+    scroll-behavior: smooth;
+
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: rgba(6, 5, 5, 0.534);
+    text-decoration: none;
+}
+
+
+
+/* Welcome Section styles */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    
+}
+#welcome-section h1 {
+    font-size:4rem;
+    font-style: bold;
+    font-family: 'SaxMono', monospace;
+}
+
+.welcome h1,
+.welcome h2 {
+    display: block;
+}
+
+#welcome-section h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'SaxMono', monospace;
+}
+
+
+/* Projects Section styles */
+#projects {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+ 
+
+
+.projects-section-header {
+  text-align: center;
+  font-size: 3rem;
+  max-width: 640x;
+  margin: 3rem auto 5rem auto;
+  border-bottom: 0.6rem solid var(--main-gray);
+  font-family: 'SaxMono', monospace;
+  justify-content: center;
+}
+
+.project-tile {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+
+.project-tile h2 {
+    font-size: 2rem;
+}
+
+.project-tile p {
+    margin-bottom: 10px;
+}
+
+.project-tile a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0rem 2rem;
+  border-radius: 2px;
+  
+}
+
+
+/* contact styles */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-white);
+    }
+
+ 
+#contact h1 {
+    font-size: 5rem;
+    font-style: bold;
+    font-family: 'SaxMono', monospace;
+}
+#contact h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'SaxMono', monospace;
+}
+@media (max-width: 28.75em) {
+  .contact-section-header > h1 {
+    font-size: 4rem;
+  }
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+ 
+}
+  @media (max-width: 28.75em) {
+    .contact-section-header > h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .contact-details {
+    font-size: 1.4rem;
+    text-shadow:  #1f1f1f;
+    transition: transform 0.3s ease-out;
+    font-family: 'SaxMono', monospace;
+    display: block;
+    text-decoration:none;
+    color: #303841;
+  }
+
+  .contact-details:hover {
+    transform: translateY(8px);
+
+  }
+  footer {
+    text-align: right;
+    padding: 1rem;
+    font-weight: 300;
+    
+    background: var(--main-white);
+    justify-content: space-evenly;
+    border-top: 4px solid var(--main-gray);
+  }
+  
+  footer p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  h4 {
+    display: block; /* Ensure it doesn't take full width */
+  }
+
+/* Media Query */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    #navbar ul li {
+        margin: 10px 0px;
+    }
+}
